@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1.5px solid rgb(122, 122, 122);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 650px;
+}
+
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+.paragraph {
+    font-size: 20px;
+    color: rgb(78, 78, 199);
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.line {
+    max-width: 500px;
+    height: 2px;
+    background-color: rgb(78, 78, 199);
+}
+
+#topics {
+    margin: 0 auto;
+    max-width: 350px;
+}
