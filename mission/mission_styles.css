@@ -1,0 +1,44 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: 0.2rem;
+}
+
+main {
+    font-size: 20px;
+}
+
+h2 {
+    color: #006EB6;
+    font-size: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+}
+
+li {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.picture {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
