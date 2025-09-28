@@ -1,13 +1,32 @@
-body {
+.content {
     font-family: 'Times New Roman', Times, serif;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 70px auto 10px auto;
     letter-spacing: 0.03rem;
+    border: 2px solid lightgray;
+    padding: 50px 100px;
+}
+
+body.light {
+    background-color: white;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+#theme-select {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 main {
     font-size: 15px;
-    padding-top: 20x;
+    padding-top: 20px;
 }
 
 h2 {
@@ -33,7 +52,7 @@ li {
     padding-bottom: 12px;
 }
 
-.picture {
+#picture {
     width: 150px;
     height: auto;
     display: block;
@@ -41,12 +60,3 @@ li {
     padding-top: 15px;
 }
 
-.content {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid lightgray;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
