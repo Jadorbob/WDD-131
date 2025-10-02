@@ -5,6 +5,7 @@
     letter-spacing: 0.03rem;
     border: 2px solid lightgray;
     padding: 50px 100px;
+    line-height: 1.5;
 }
 
 body.light {
@@ -33,18 +34,16 @@ h2 {
     color: #006EB6;
     font-size: 15px;
     letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 h1 {
     text-transform: uppercase;
+
 }
 
 .title {
     text-align: center;
-}
-
-.first {
-    padding-top: 25px;
 }
 
 li {
