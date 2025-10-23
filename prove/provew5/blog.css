@@ -47,7 +47,6 @@ nav a:hover {
 
 /* ---------------------------------- */
 
-/* Initially hide the skip link off-screen */
 .skiptocontent a {
     position: absolute;
     left: -9999px;
