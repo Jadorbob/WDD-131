@@ -78,12 +78,14 @@ main.content {
     grid-column: 2;
     border: solid 3px var(--color-gold);
     grid-row: 1/5;
+    margin-top: 30px;
 }
 
 .book {
     grid-column: 1;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    margin-top: 30px;
 }
 
 .info {
@@ -91,10 +93,19 @@ main.content {
     gap: 0.5rem;
     text-align: right;
     margin-right: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.date, .age, .genre, .stars {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .date {
     font-size: 20px;
+    padding: 0px;
+    margin-bottom: 0;
 }
 
 .block {
