@@ -1,0 +1,87 @@
+/* form-demo.css */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.errors > p {
+  border: 1px solid red;
+  padding: 0.5em;
+}
+/* Style the select arrow for Safari */
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Style the select arrow for other browsers */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.hide {
+  display: none; /* Initially hide the credit card input and label */
+}
+
+
+
+/* Center and style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing for labels and inputs */
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select,
+button {
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hide containers by default */
+.hide {
+  display: none;
+}
