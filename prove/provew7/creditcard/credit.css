@@ -1,0 +1,141 @@
+body {
+    max-width: 500px;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: rgb(151, 151, 151);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-front {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: left;
+}
+
+img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+    justify-self: right;
+    align-self: center;
+}
+
+.amount {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+    justify-self: left;
+    align-self: center;
+}
+
+.card-number-container {
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card-holder-container {
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-exp-container {
+    grid-row: 3/4;
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card-exp-container label {
+  display: block;
+}
+.card-exp-inputs {
+  display: flex;
+  gap: 10px;
+}
+.card-exp-container input {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 40px;
+}
+
+/* End of Card Front ----------------------- */
+
+
+.card-back {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    padding-right: 0;
+}
+
+.CVC-container {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
+    justify-self: end;
+    align-self: end;
+}
+.CVC-container input {
+    width: 70px;
+}
+
+.card-stripe {
+    background-color: rgb(15, 15, 15);
+    height: 40px;
+    width: 100%;
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+button {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
