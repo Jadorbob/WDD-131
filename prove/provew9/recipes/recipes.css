@@ -57,7 +57,8 @@ img {
     background-color: antiquewhite;
 }
 
-.search-img {
+
+.search-btn {
     width: 50px;
     height: 100%;
     
@@ -67,6 +68,7 @@ img {
     border-left: none;
     box-sizing: border-box;
 
+    background: none;
     margin: 0;
     padding: 0;
 }
@@ -92,16 +94,25 @@ img {
     flex-flow: column nowrap;
 }
 
-.tag1 {
+.recipe_tags {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+.recipe_tags li {
     color: #333;
     border: solid #333 2px;
     font-family: var(--primary-font);
 
     font-size: 30px;
-    max-width: 100px;
+    /* max-width: 100px; */
 
     margin-top: 10px;
     padding: 10px;
+
 }
 
 .recipe-title {
