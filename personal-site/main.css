@@ -105,8 +105,6 @@ nav a:hover {
   font-size: 60px;
 }
 
-
-
 footer {
     display: flex;
     flex-flow: row;
@@ -404,3 +402,14 @@ hr {
     text-decoration: none;
     color: var(--primary-color);
 }
+
+
+
+
+
+/* ===================================================== */
+
+@media (max-width: 1200px) {}
+
+
+@media (max-width: 600px) {}
