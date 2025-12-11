@@ -10,7 +10,8 @@ const Submarine = {
     oxygen: 50,
     oxygenMax: 100,
 
-    depthProgressRate: 15,
+    // depthProgressRate: 15,
+    depthProgressRate: 650,
 
     pressureToAirRatio: 5,
     pressureToTravel: 50,
@@ -144,6 +145,10 @@ const Submarine = {
         if (this.oxygen <= 0) {
             this.playerIsDead();
         };
+
+        if (this.depth >= 1000) {
+            this.winGame();
+        }
     },
 
     playerIsDead() {
@@ -154,6 +159,18 @@ const Submarine = {
         this.stopBoilerDecay();
         this.stopOxygenDecay();
         music.pause();
+    },
+
+    winGame() {
+        const fightMusic = document.getElementById("background-music");
+        const winMusic = document.getElementById("win-music");
+        const winScreen = document.querySelector(".win-screen");
+
+        winScreen.style.display = "";
+        this.stopBoilerDecay();
+        this.stopOxygenDecay();
+        fightMusic.pause();
+        winMusic.play();
     }
 };
 
@@ -184,7 +201,9 @@ function main() {
     const music = document.getElementById("background-music");
 
     const loseScreen = document.querySelector(".lose-screen");
+    const winScreen = document.querySelector(".win-screen");
     loseScreen.style.display = "none";
+    winScreen.style.display = "none";
 
     startBtn.addEventListener("click", () => {
         loreScreen.style.display = "none";

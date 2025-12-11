@@ -294,7 +294,8 @@ hr {
 }
 
 
-
+/* -------------------------------------------------------------------------------- */
+/* Win, lose and start screens */
 
 .lore-screen {
     position: fixed;
@@ -325,6 +326,8 @@ hr {
     font-family: var(--heading-font);
 
     background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 
@@ -353,6 +356,7 @@ hr {
     margin-top: 20px;
     font-size: 1.2em;
     cursor: pointer;
+    margin-top: 20px;
 
     font-family: var(--heading-font);
 
@@ -362,4 +366,41 @@ hr {
 
 .lose-screen a:visited {
     color: var(--accent1-color);
+}
+
+.win-screen a:visited {
+    color: var(--primary-color);
+}
+
+.win-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+
+.win-content {
+    text-align: center;
+}
+
+.win-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    font-family: var(--heading-font);
+
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
