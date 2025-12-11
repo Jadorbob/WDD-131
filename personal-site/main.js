@@ -10,8 +10,7 @@ const Submarine = {
     oxygen: 50,
     oxygenMax: 100,
 
-    // depthProgressRate: 15,
-    depthProgressRate: 650,
+    depthProgressRate: 20,
 
     pressureToAirRatio: 5,
     pressureToTravel: 50,
