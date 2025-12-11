@@ -9,8 +9,8 @@
     
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="recipes.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 
     <meta property="og:title" content="Submersibles">
     <meta property="og:type" content="website" />
@@ -22,32 +22,37 @@
 <body>
     <header>
         <nav>
-            <img class="logo-img" src="" alt="Logo">
-            <div>
-                <a href="index.html">Home</a>
-                <a href="page2.html">Into the Deep</a>
-            </div>
-        </nav>
+            <img class="logo-img" src="images/favicon.png" alt="Logo">
+			<a href="index.html">Home</a>
+			<a href="page2.html">Into the Deep</a>
+		</nav>
     </header>
     <main>
         <section>
             <div class="hero-container">
-                <img class="hero-img" src="" alt="Hero image">
-                <h1 class="hero-slogan">Into the Deep</h1>
-                <p>Can you survive the Tragedy?</p>
-                <a class="playnow" href="page2.html">Play Now!</a>
+                <img class="hero-img" src="images/underwatersub.jpg" alt="Hero image">
+                <h1 class="hero-title">Into the Deep</h1>
+                <p class="hero-text">Can you survive the Tragedy?</p>
             </div>
         </section>
+        <hr>
         <div class="content">
-            <img src="" alt="Diving bell">
-            <p>This is my game that I made for fun during my Dynamic Website class! I had a ton of fun making it
-                though I did have a few troubles with the Javascript before I was able to make it all work. Troubleshooting was my best friend during this project.
-            </p>
+            <img class="tall-sub" src="images/submarine-tall.png" alt="tall-submersible">
+            <div class="rules">
+                <h2>How to play</h2>
+                <p>To win the game, you must reach a depth of 1000 meters. There will be buttons to push to make the submarine go deeper. Just make sure to keep an eye on fuel consumption and oxygen levels.</p>
+                <p>You will lose the game if your oxygen reaches zero or 100 or if your boiler explodes.</p>
+                <p>Your oxygen is produced by the boiler. You also need boiler pressure to traverse.</p>
+                <p>You have a set amount of fuel to make the journey, if you run out you won't be able to keep the boiler going therefore you will run out of oxygen.</p>
+                <p>If you can manage your resources and make it to the depth of 1000 you will be considered the best of the best, Sea Dive Captain of all the known world! Good luck out there!</p>
+                <a class="playnow" href="page2.html">Play Now!</a>
+            </div>
         </div>
     </main>
+    <hr>
     <footer>
+        <p>WDD-131</p>
         <p>@Jadon Tietjen</p>
-        <p>Learn more about game design here!</p>
     </footer>
 </body>
 </html>

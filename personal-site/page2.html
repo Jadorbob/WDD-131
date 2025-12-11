@@ -9,8 +9,8 @@
     
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="recipes.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 
     <meta property="og:title" content="Submersibles">
     <meta property="og:type" content="website" />
@@ -22,35 +22,56 @@
 <body>
     <header>
         <nav>
-            <img class="logo-img" src="" alt="Logo">
-            <div>
-                <a href="index.html">Home</a>
-                <a href="page2.html">Into the Deep</a>
-            </div>
-        </nav>
+            <img class="logo-img" src="images/favicon.png" alt="Logo">
+			<a href="index.html">Home</a>
+			<a href="page2.html">Into the Deep</a>
+		</nav>
     </header>
     <main>
         <div class="game-window">
             <div class="depth-container">
-                <p class="depth-counter">0</p>
-                <p>/1000</p>
+                <p class="depth-label">Depth:</p>
+                <div class="depth-counter">
+                    <p>0</p>
+                    <p>/1000</p>
+                </div>
             </div>
-            <div class="boiler-container">
-                <p class="boiler-counter">0</p>
-                <p>/900</p>
+            <div class="image-container">
+                <img class="curtain" src="images/dials-curtain.jpeg" alt="curtain">
+                <img class="player" src="images/dark-sea-sub.jpeg" alt="playersub">
+                <img class="curtain" src="images/tubes-curtain.jpeg" alt="curtain">
             </div>
-            <div class="oxygen-container">
-                <p class="oxygen-counter">100</p>
+            <div class="button-container">
+                <div class="fuel-container">
+                    <p class="label">Fuel</p>
+                    <div class="stat-counter">
+                        <p>1000</p>
+                        <p>/1000</p>
+                    </div>
+                </div>
+                <button class="boiler-container">
+                    <p class="label">Boiler Pressure</p>
+                    <div class="stat-counter">
+                        <p>100</p>
+                        <p>/900</p>
+                    </div>
+                </button>
+                <button class="oxygen-container">
+                    <p class="label">Oxygen Pressure</p>
+                    <div class="stat-counter">
+                        <p>50</p>
+                        <p>/100</p>
+                    </div>
+                </button>
+                <button class="travel-container">
+                    <p class="label">Hold to Traverse</p>
+                </button>
             </div>
-            <div class="fuel-container">
-                <p class="fuel-counter">1000</p>
-            </div>
-            
         </div>
     </main>
     <footer>
+        <p>WDD-131</p>
         <p>@Jadon Tietjen</p>
-        <p>Learn more about game design here!</p>
     </footer>
 </body>
 </html>
