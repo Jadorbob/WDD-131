@@ -18,7 +18,7 @@ const Submarine = {
     boilerDecay: 2,
     oxygenDecay: 1,
     
-    boilerRefillRate: 102,
+    boilerRefillRate: 100,
     boilerFuelCostRate: 30,
 
     oxygenRefillRate: 10,
@@ -140,6 +140,20 @@ const Submarine = {
         document.querySelector(".fuel-container .stat-counter p:first-child").textContent = Math.floor(this.fuel);
         document.querySelector(".boiler-container .stat-counter p:first-child").textContent = Math.floor(this.boiler);
         document.querySelector(".oxygen-container .stat-counter p:first-child").textContent = Math.floor(this.oxygen);
+
+        if (this.oxygen <= 0) {
+            this.playerIsDead();
+        };
+    },
+
+    playerIsDead() {
+        const loseScreen = document.querySelector(".lose-screen");
+        const music = document.getElementById("background-music");
+        
+        loseScreen.style.display = "";
+        this.stopBoilerDecay();
+        this.stopOxygenDecay();
+        music.pause();
     }
 };
 
@@ -164,6 +178,22 @@ oxygenBtn.addEventListener("mouseleave", () => Submarine.stopOxygenRefill());
 // -------------------------------------------------------
 // Game Start
 
+function main() {
+    const startBtn = document.querySelector(".start-game-btn");
+    const loreScreen = document.querySelector(".lore-screen");
+    const music = document.getElementById("background-music");
 
+    const loseScreen = document.querySelector(".lose-screen");
+    loseScreen.style.display = "none";
 
-Submarine.startStatDecay();
+    startBtn.addEventListener("click", () => {
+        loreScreen.style.display = "none";
+        music.play();
+
+        setTimeout(() => {
+            Submarine.startStatDecay();
+        }, 10000);
+    });
+}
+
+main();

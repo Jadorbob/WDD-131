@@ -28,6 +28,26 @@
 		</nav>
     </header>
     <main>
+        <div class="lose-screen">
+            <div class="lose-content">
+                <h1>Game Over</h1>
+                <p>You died to lack of oxygen. Make sure to keep an eye on it at all times!</p>
+                <p>Press <strong>Restart</strong> when you are ready to try again.</p>
+                <a class="res-button" href="page2.html">Restart</a>
+            </div>
+        </div>
+        <div class="lore-screen">
+            <div class="lore-content">
+                <h1>Submersibles</h1>
+                <p>Humanity’s survival hangs by a thread. Rising tides, deadly storms, and the unknown depths threaten everything we know.</p>
+                <p>You are the commander of the last operational submarine, sent on a mission that no one else can attempt.</p>
+                <p>Beneath the crushing pressure of the deep sea lies the key to reversing the planet’s devastation—a resource, a signal, something that could save millions of lives.</p>
+                <p>Every decision matters. Mismanage your boiler, your oxygen, or your fuel, and the darkness will claim you.</p>
+                <p>The ocean does not forgive mistakes. Time is running out.</p>
+                <p>Press <strong>Start Mission</strong> when you are ready to descend into the abyss and fight for the future of humanity.</p>
+                <button class="start-game-btn">Start Mission</button>
+            </div>
+        </div>
         <div class="game-window">
             <div class="depth-container">
                 <p class="depth-label">Depth:</p>
@@ -69,6 +89,9 @@
             </div>
         </div>
     </main>
+    <audio id="background-music" loop>
+        <source src="music/fighting-battle-warrior-drums-395016.mp3" type="audio/mpeg">
+    </audio>
     <footer>
         <p>WDD-131</p>
         <p>@Jadon Tietjen</p>

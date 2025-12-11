@@ -292,3 +292,74 @@ hr {
   margin: 0;
   padding: 0;
 }
+
+
+
+
+.lore-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+
+.lore-content {
+    text-align: center;
+}
+
+.lore-screen button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    font-family: var(--heading-font);
+
+    background-color: var(--secondary-color);
+}
+
+
+.lose-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+
+.lose-content {
+    text-align: center;
+}
+
+.lose-screen a {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    font-family: var(--heading-font);
+
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.lose-screen a:visited {
+    color: var(--accent1-color);
+}
