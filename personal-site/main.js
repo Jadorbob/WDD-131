@@ -190,6 +190,35 @@ oxygenBtn.addEventListener("mousedown", () => Submarine.startOxygenRefill());
 oxygenBtn.addEventListener("mouseup", () => Submarine.stopOxygenRefill());
 oxygenBtn.addEventListener("mouseleave", () => Submarine.stopOxygenRefill());
 
+// ---------------------------------
+// Mobile
+
+travelBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    Submarine.startTravel();
+});
+travelBtn.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    Submarine.stopTravel();
+});
+
+boilerBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    Submarine.startBoilerRefill();
+});
+boilerBtn.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    Submarine.stopBoilerRefill();
+});
+
+oxygenBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    Submarine.startOxygenRefill();
+});
+oxygenBtn.addEventListener("touchend", (e) => {
+    e.preventDefault();
+    Submarine.stopOxygenRefill();
+});
 
 // -------------------------------------------------------
 // Game Start
