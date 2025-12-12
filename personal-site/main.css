@@ -511,4 +511,7 @@ hr {
     height: 60px;
     font-size: 15px;
   }
+  .logo-img {
+    width: auto;
+  }
 }
