@@ -491,6 +491,7 @@ hr {
   .travel-container {
     margin: 0 auto;
     touch-action: none;
+    height: 110px;
   }
 
   .image-container {
@@ -511,7 +512,14 @@ hr {
     height: 60px;
     font-size: 15px;
   }
+  
   .logo-img {
     width: auto;
+  }
+
+  .lore-content,
+  .win-content,
+  .lose-content {
+    font-size: 12px;
   }
 }

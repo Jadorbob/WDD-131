@@ -191,7 +191,7 @@ oxygenBtn.addEventListener("mouseup", () => Submarine.stopOxygenRefill());
 oxygenBtn.addEventListener("mouseleave", () => Submarine.stopOxygenRefill());
 
 // ---------------------------------
-// Mobile
+// Mobile -- I added these with the help of Ai so my family could see and play the site on their phones!
 
 travelBtn.addEventListener("touchstart", (e) => {
     e.preventDefault();
