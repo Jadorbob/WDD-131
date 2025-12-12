@@ -456,9 +456,22 @@ hr {
     gap: 5px;
   }
 
+  .hero-img {
+    min-height: none;
+    max-height: 300px;
+  }
+
+  .hero-title {
+    top: 20%;
+  }
+
+  .hero-text {
+    top: 30%;
+  }
+
   .image-container {
     max-height: 400px;
-    max-width: fit-content;
+    width: 100%;
   }
 }
 
@@ -482,5 +495,15 @@ hr {
 
   .image-container {
     display: none;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    top: 15%;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    top: 25%;
   }
 }
