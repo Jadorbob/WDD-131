@@ -522,4 +522,8 @@ hr {
   .lose-content {
     font-size: 12px;
   }
+
+  .rules p {
+    margin-top: 0;
+  }
 }
