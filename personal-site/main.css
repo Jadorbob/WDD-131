@@ -48,6 +48,9 @@ h2 {
   text-align: center;
 }
 
+header {
+  border-bottom: solid var(--accent2-color) 5px;
+}
 
 nav {
   background-color: var(--nav-background-color);
@@ -55,8 +58,7 @@ nav {
   text-align: center;
   font-size: 1.2em;
   padding-right: 10px;
-}
-nav {
+
   list-style-type: none;
   display: flex;
   justify-content: end;
@@ -312,7 +314,7 @@ hr {
 }
 
 .label {
-  font-style: var(--heading-font);
+  font-family: var(--heading-font);
   font-size: 20px;
 
   margin: 0;
@@ -457,7 +459,6 @@ hr {
   }
 
   .hero-img {
-    min-height: none;
     max-height: 300px;
   }
 

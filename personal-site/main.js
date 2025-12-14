@@ -57,7 +57,6 @@ const Submarine = {
         if (this.isTraveling) return;
         
         this.isTraveling = setInterval(() => {
-            
             if (this.boiler > 0) {
                 this.depth += this.depthProgressRate / 10;
                 const boilerUsed = this.pressureToTravel / 10;
@@ -227,9 +226,9 @@ function main() {
     const startBtn = document.querySelector(".start-game-btn");
     const loreScreen = document.querySelector(".lore-screen");
     const music = document.getElementById("background-music");
-
     const loseScreen = document.querySelector(".lose-screen");
     const winScreen = document.querySelector(".win-screen");
+    
     loseScreen.style.display = "none";
     winScreen.style.display = "none";
 
