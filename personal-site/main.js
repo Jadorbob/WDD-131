@@ -135,11 +135,17 @@ const Submarine = {
     },
 
     updateUI() {
-        document.querySelector(".depth-counter p:first-child").textContent = Math.floor(this.depth);
-        document.querySelector(".fuel-container .stat-counter p:first-child").textContent = Math.floor(this.fuel);
-        document.querySelector(".boiler-container .stat-counter p:first-child").textContent = Math.floor(this.boiler);
-        document.querySelector(".oxygen-container .stat-counter p:first-child").textContent = Math.floor(this.oxygen);
+        const stats = [
+                { selector: ".depth-counter p:first-child", value: this.depth },
+                { selector: ".fuel-container .stat-counter p:first-child", value: this.fuel },
+                { selector: ".boiler-container .stat-counter p:first-child", value: this.boiler },
+                { selector: ".oxygen-container .stat-counter p:first-child", value: this.oxygen }
+            ];
 
+        stats.forEach(stat => {
+            document.querySelector(stat.selector).textContent = Math.floor(stat.value);
+        });
+        
         if (this.oxygen <= 0) {
             this.playerIsDead();
         };
@@ -228,7 +234,7 @@ function main() {
     const music = document.getElementById("background-music");
     const loseScreen = document.querySelector(".lose-screen");
     const winScreen = document.querySelector(".win-screen");
-    
+
     loseScreen.style.display = "none";
     winScreen.style.display = "none";
 
